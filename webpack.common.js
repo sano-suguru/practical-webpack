@@ -10,6 +10,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "js/[name].bundle.js",
+    chunkFilename: "js/[name].js",
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "initial",
+      name: "vendor",
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),
