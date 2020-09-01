@@ -1,5 +1,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/js/app.js",
@@ -8,8 +9,9 @@ module.exports = {
     filename: "js/bundle.js",
   },
   plugins: [
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ["**/*", "!**.html"],
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/html/index.html",
     }),
   ],
 };
