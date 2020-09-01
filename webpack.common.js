@@ -15,13 +15,25 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: "initial",
-      name: "vendor",
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          name: "vendor",
+        },
+        vendorsModules: {
+          test: /src[\\/]js[\\/]modules/,
+          name: "vendor-modules",
+          minSize: 0,
+          minChunks: 2,
+        },
+      },
     },
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/html/index.html",
+      chunks: ["app"],
     }),
     new HtmlWebpackPlugin({
       filename: "another.html",
