@@ -6,10 +6,10 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   rules: {
-    "prefer-const": "error",
+    'prefer-const': 'error',
   },
 };
