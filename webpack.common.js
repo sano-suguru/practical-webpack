@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "js/[name].[contenthash].bundle.js",
+    filename: "js/[name].[contenthash].js",
     chunkFilename: "js/[name].[contenthash].js",
   },
   optimization: {
@@ -28,6 +28,15 @@ module.exports = {
         },
       },
     },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
