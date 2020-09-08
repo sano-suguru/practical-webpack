@@ -1,4 +1,4 @@
-## Udemyで購入した[webpack 最速入門 〜実務でも利用できるフロントエンド開発環境を構築する方法を最短で学ぶ〜](https://www.udemy.com/course/practical-webpack/learn/lecture/21562372?start=0#overview)を最後間やった
+## Udemyで購入した[webpack 最速入門 〜実務でも利用できるフロントエンド開発環境を構築する方法を最短で学ぶ〜](https://www.udemy.com/course/practical-webpack/learn/lecture/21562372?start=0#overview)を最後までやった
 
 - webpackを利用したフロントエンド開発環境の構築方法
 - webpackの基礎（webpackが何をするツールなのか、webpackの主要な機能や用語に関して）
